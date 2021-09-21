@@ -1,0 +1,16 @@
+public class conditional_stmt {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		boolean bat = true;
+		boolean ball = false;
+		if(bat == true && ball == true) {
+			System.out.println("I can play cricket");
+		}else {
+			System.out.println("I can't play cricket");
+		}
+		
+
+	}
+
+}
