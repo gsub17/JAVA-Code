@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class ElseIf {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		
+		int h1 = sc.nextInt();
+		int h2 = sc.nextInt();
+		
+		if( h1>h2) {
+			System.out.println("Opp1 win");
+		}else if(h1<h2) {
+			System.out.println("Opp2 win");
+		}else {
+			System.out.println("Draw");
+		}
+	}
+
+}
