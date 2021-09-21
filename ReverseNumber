@@ -1,0 +1,42 @@
+
+public class ReverseNumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		/*
+		
+		int num = 342;
+		
+		int uDigit = num%10;
+		System.out.println(uDigit);
+		
+		int t1Digit = num/10;
+		int tDigit = t1Digit%10;
+		System.out.println(tDigit);
+		
+		
+		int hDigit = t1Digit/10;
+		System.out.println(hDigit);
+		
+		System.out.println("original no - "+num);
+		System.out.println("reverse no - " + uDigit +""+ tDigit + "" + hDigit); // no space btw them
+		
+		//above is also correct
+		
+		*/
+		
+		int num = 342 ;
+		
+		while(num != 0) {
+			
+			int uDigit = num % 10;
+			
+			System.out.print(uDigit);
+			
+			num = num/10;
+		}
+
+	}
+
+}
