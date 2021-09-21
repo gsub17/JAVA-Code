@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class ifelsedemo2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		boolean xbox = sc.nextBoolean() ;
+		boolean ps5 = sc.nextBoolean();
+		
+		if(xbox == true || ps5 == true) {
+			
+			System.out.println("I can play the games");
+		}else {
+			System.out.println("I can't play the games");
+		}
+
+	}
+
+}
