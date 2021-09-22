@@ -1,0 +1,49 @@
+
+public class Pattern4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int n = 5;
+		int row = 1;
+		int nsp = n-1;
+		int nst = 1;
+		
+		while(row <= n) {
+			
+			
+			
+			// print space 
+			//print stars  // two work 
+			// nst = no. of stars // nsp = no. of spaces
+			// row =1 nsp =4 nst = 1
+			// row =2 nsp = 3 nst =2
+			//row = 3 nsp =2 nst =3 // cst = count star
+			
+			int csp =1;
+			while(csp <= nsp) {
+				System.out.print(" ");
+				csp++;
+				
+				}
+			
+			int cst =1;
+			while(cst <=nst) {
+				System.out.print('*');
+				cst++;
+			}
+			
+			nst++;
+			nsp--;
+			System.out.println();
+			
+			
+			
+			
+			
+			row++;
+		}
+
+	}
+
+}
