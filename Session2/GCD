@@ -1,0 +1,39 @@
+public class GCD {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int num1 =18;
+		int num2 = 30;
+		
+		// compare two number
+		int dividend =0;
+		int divisor = 0;
+		
+		if(num1>num2) {
+			dividend = num1;
+			divisor = num2;
+		}else {
+			dividend = num2;
+			divisor = num1;
+		}
+		
+		
+			
+			
+			
+			while(dividend%divisor != 0) {
+				
+				int k = dividend % divisor;
+				dividend =divisor;
+				divisor = k;
+				
+				
+				
+			}
+			System.out.println(divisor);
+			
+		
+	}
+
+}
