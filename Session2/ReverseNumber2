@@ -1,0 +1,21 @@
+public class ReverseNumber2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int num = 100;
+		int revNum = 0;
+		int k =0;
+		
+		while(num > 0) {
+			
+			k = num%10;//extracting digit
+			revNum = revNum*10 + k;
+			num = num/10;//discard the last digit
+			
+		}
+		System.out.println(revNum);
+
+	}
+
+}
