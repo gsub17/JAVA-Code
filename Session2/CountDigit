@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class CountDigit {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int count = 0;
+		int num =342;
+		while(num > 0) {
+			
+			int digit = num %10;
+			//System.out.println(digit);
+			num = num /10;
+			count = count +1;
+		}
+		System.out.println(count);
+		
+
+	}
+
+}
