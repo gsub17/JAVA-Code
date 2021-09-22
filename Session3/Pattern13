@@ -1,0 +1,37 @@
+public class Pattern13 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n = 5;
+		int row = 1;
+		int nst = 1;
+		
+		while(row <= (2*n-1)) {
+			
+			
+			int cst = 1;
+			while(cst <= nst) {
+				
+		
+			
+				if(cst%2 == 0) {
+					System.out.print("\t");
+				}else {
+				System.out.print("*");
+			}
+				cst++;}
+			
+			if(row < n) {
+			
+			nst +=2;}
+			else { nst -=2;
+				
+			}
+			System.out.println();
+			row++;
+			
+		}
+
+	}
+
+}
