@@ -1,0 +1,45 @@
+
+public class Pattern14 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n =5;
+		int row = 1;
+		int nsp = n-1; // in terms of n
+		int nst = 1;
+
+		
+		
+		while(row < 2*n-1) {
+			
+			int csp = 1;
+			while(csp <= nsp) {
+				System.out.print(" \t");
+				csp++;
+			}
+			
+			int cst = 1;
+			while(cst <= nst) {
+				System.out.print("*\t");
+				cst++;
+				
+			}
+			
+			if(row < n) {
+				nsp--;
+				nst++;
+			}else {
+				nsp++;
+				nst--;
+			}
+			
+			
+			
+			
+			
+			System.out.println();
+			row++;
+		}
+	}
+
+}
