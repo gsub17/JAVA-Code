@@ -1,0 +1,35 @@
+
+public class AnyToAny {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int source_num = 33;
+		int count = 0;
+		int count2 = 0;
+		int sum = 0;
+		int sum2 = 0;
+		System.out.println(source_num + "  Base 8");
+		
+		while(source_num > 0) {   // converting base8 to base 10
+			
+			int rem = source_num%10;
+			
+			sum = sum + (int)(rem * Math.pow(8,count));
+			count++;
+			source_num = source_num / 10;
+		}
+             System.out.println(sum + "  Base 10");
+             int source_num2 = sum;
+             
+         while(source_num2 > 0 ) { // converting base10 to base2
+        	  int rem2 = source_num2%2;
+        	  sum2 = sum2 + (int)(rem2 * Math.pow(10,count2));
+        	  count2++;
+        	  source_num2 = source_num2/2;
+        	 
+         }
+         System.out.println(sum2 + "  Base 2");
+	}
+
+}
