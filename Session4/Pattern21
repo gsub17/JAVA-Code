@@ -1,0 +1,58 @@
+public class Pattern21 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       int n = 5;
+       int row =1 ;
+       int nsta = 1;
+       int nsp = 2*n-3;
+       int nstb = 1;
+       
+       
+       while(row <= n) {
+    	   
+    	   int cstb = 1;
+    	   while(cstb <= nstb) {
+    		   System.out.print("*");
+    		   cstb++;
+    	   }
+    	   
+    	       int csp = 1;
+    	   
+    		   while(csp <= nsp) {
+        		   System.out.print(" ");
+        		   csp++;
+        	   }
+    		   
+    	   
+    	   
+    	   
+    	   int csta = 1;
+    	   if(row == n) {
+    		   while(csta < nsta) {
+        		   System.out.print("*");
+        		   csta++;
+        	   }
+    		   
+    	   }else {
+    		   while(csta <= nsta) {
+        		   System.out.print("*");
+        		   csta++;
+        	   }
+    		   
+    	   }
+    	  
+    	   
+    	   
+    	   
+    		   nsta++;
+        	   nsp -=2;
+        	   nstb++;
+    		       	   
+     	   row++;
+    	   System.out.println();
+    	   
+       }
+	}
+
+}
