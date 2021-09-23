@@ -1,0 +1,22 @@
+public class BinaryToDecimal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int bin = 100101;
+		int count = 0;
+		int sum = 0;
+		
+		while(bin > 0) {
+			
+			int rem = bin%10;
+			sum = sum + (int)( rem * Math.pow(2, count));
+			count++;
+			bin = bin/10;
+			
+		}
+		
+		System.out.print(sum);
+	}
+
+}
