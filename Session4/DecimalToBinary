@@ -1,0 +1,20 @@
+public class DecimalToBinary {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int dec= 37;
+		int sum = 0;
+		int count = 0;
+		
+		while(dec > 0) {
+			
+			int rem = dec%2;
+		    sum = sum + (int )(rem *  Math.pow(10,count));
+			count++;
+			dec = dec/2;
+		}
+		System.out.print(sum);
+	}
+
+}
