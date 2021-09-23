@@ -1,0 +1,54 @@
+ublic class Pattern17 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int n =7;
+		int row = 1;
+		int nstb = n/2;
+		int nsp = 1;
+		int nsta = n/2;
+		
+		while(row <= n) {
+			
+			int cstb = 1;
+			while(cstb <= nstb) {
+				System.out.print("*");
+				cstb++;
+			}
+			
+			int csp = 1;
+			while(csp <= nsp) {
+				System.out.print(" ");
+				csp++;
+			}
+			
+			int csta = 1;
+			while(csta <= nsta) 
+			{
+				System.out.print("*");
+				csta++;
+			}
+			
+			
+			if(row <= n/2) {  // = as we work for 
+				
+				nstb--;
+				nsp +=2;
+				nsta--;
+				
+			}else {nstb++;
+			      nsp -=2;
+			      nsta++;
+				
+				
+			}
+			
+			
+			
+			row++;
+			System.out.println();
+		}
+		
+	}
+}
