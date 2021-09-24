@@ -1,0 +1,66 @@
+public class DataTypeCases {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		byte b = 10;
+		short s = 10;
+		int i = 10;
+		long l = 10;
+		
+		b = (byte)s;//explicit type casting
+		b = (byte)i;
+		b = (byte)l;
+		
+		s = b; // 16 bits = 8 bits+8 bits
+		i = s;
+		
+		b = 100;//implicit type casting
+		// decimal no
+		
+		float pi = 3.14f; //write f
+		double piD = 3.14;
+		
+		float k = 3.12345678f;//it take only upto 7 decimal places only
+		double u = 3.1234567890123456789; // it take only upto 15 decimal places
+		
+		System.out.println(k);
+		
+		//char data type
+		char c = 'a';
+		System.out.println(c);
+		
+		System.out.println((int)c);
+		
+		int ch = 'a';  // as we fetching it unicode value as 97 value is in the range
+		System.out.println(ch);
+		
+		System.out.println(4 + 'a' + 5);//as int is dominating char . char is of 2 byte and int is 4 byte
+		
+		// int + char = int
+		
+	    System.out.println(4 + ch);
+	    
+	    
+	    
+	    System.out.println((char)(4 + 'a' + 5));
+		
+		
+		//String  -> it is a class
+	    // All class have first letter capital
+	    
+	    String str = "Hello";
+	    System.out.println(str);
+	    
+	    System.out.println(4 + 5 + "Hello"); // L to right processing is done java
+	    
+	    System.out.println(4 + 5 + "Hello" + 4 + 5); //
+	    
+	    
+	    
+		
+		
+		
+
+	}
+
+}
