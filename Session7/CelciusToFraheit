@@ -1,0 +1,34 @@
+
+import java.util.Scanner;
+
+public class CelciusToFraheit {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		double Min = sc.nextDouble();
+		double Max = sc.nextDouble();
+		double Step = sc.nextDouble();
+		double num = Step;
+		
+		while(Min <= Max) {
+			
+			int celcius = 0;
+			
+			celcius = (int)((5f/9)*(Min-32));
+			
+			int min = (int)Min;
+			System.out.print(min + "\t");
+			System.out.print(celcius);
+			
+			
+			Min = Min + num;
+			System.out.println();
+		}
+		
+		
+
+	}
+
+}
