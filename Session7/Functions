@@ -1,0 +1,19 @@
+public class Functions {
+	
+	
+	public static void addition() {  //we created a function
+		
+		int a = 20;
+		int b = 50;
+		
+		System.out.println(a+b);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		addition();
+		
+
+	}
+
+}
