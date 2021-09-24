@@ -1,0 +1,28 @@
+
+public class ArrayDemo {
+
+	public static void main(String[] args) {
+		
+		
+		// TODO Auto-generated method stub
+		
+		int[] marks = new int[5];
+		
+		int[] sachin = new int[6];
+		
+		System.out.println(sachin);//it will print the address of the heap
+		sachin[0] = 57;
+		sachin[1] = 67;
+		sachin[2] = 46;
+		sachin[3] = 45;
+		sachin[4] = 56;
+		sachin[5] = 48;
+		
+		for(int i = 0; i<=5; i++) {
+			
+			System.out.println(sachin[i]);
+		}
+
+	}
+
+}
