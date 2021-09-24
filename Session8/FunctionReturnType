@@ -1,0 +1,18 @@
+
+public class FunctionReturnType {
+	
+	public static int addition(int a , int b) {
+		
+		int c = a+b;
+		return c;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int ans = addition(5, 7);
+		System.out.println(ans);
+
+	}
+
+}
