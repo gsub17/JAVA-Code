@@ -1,0 +1,22 @@
+
+public class LocalAndStaticDemo {
+	
+	static int india = 10; // global variable
+	
+	public static void addition() {
+		
+		
+		int india =20; //local variable
+		int people =9;
+		
+		System.out.println(india+people);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		addition();
+		System.out.println(india);
+	}
+
+}
