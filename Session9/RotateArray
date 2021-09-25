@@ -1,0 +1,42 @@
+
+public class RotateArray {
+	
+	public static void rotate(int[] arr , int k , int rota) {
+		
+		int z = 1;
+		
+		while(z <= rota) {
+			int last = arr[k];
+			
+			for(int i = k ; i > 0 ; i--) {
+				arr[i] = arr[i-1];	
+			}
+			
+			arr[0] = last;
+			z++;
+			
+		}
+		
+		
+		for(int j = 0; j<= k;j++) {
+			System.out.print(arr[j] + " ");
+		}
+		
+		
+	}
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    
+		int[] arr = {1,2,3,4,5,6,7};
+		int k = arr.length;
+		int rota = 3;
+		int mod = rota%k;
+		
+		rotate(arr, k-1,mod);
+		
+	}
+
+}
