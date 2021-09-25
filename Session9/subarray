@@ -1,0 +1,33 @@
+
+public class SubArrays {
+	
+	public static void subarray(int[] arr  , int n) {
+		
+		
+		for(int si = 0 ; si <= n-1;si++) {
+			
+			for(int ci = si ; ci < n ; ci++) {
+				int sum = 0;
+				for(int i = si ; i <= ci ; i++) {
+					
+					sum = sum + arr[i];
+					System.out.print(arr[i] + " ");
+					
+				}
+				System.out.println("sum - " +sum );
+				System.out.println();
+			}
+		}
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      int[] arr = {1,2,3,4};
+      int n = arr.length ; 
+      
+      subarray(arr, n);
+      
+	}
+
+}
