@@ -1,0 +1,37 @@
+public class ArrayQuestions {
+	
+	public static void reverse(int[] arr , int n) {
+		
+		int k = n-1;
+		int newarr = 0 ;
+		int i = 0, j = k;
+		
+		while(i < j) {
+			newarr = arr[j];
+			arr[j] = arr[i];
+			arr[i] = newarr;
+			i++;
+			j--;
+		}
+		
+		for(int a = 0 ; a <= k ;a++) {
+			
+			System.out.print(arr[a] + " ");
+		}
+		
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int[] arr = {1,2,3,4,5,6,7};
+		
+		int n = arr.length;
+		
+		reverse(arr, n);
+		
+
+	}
+
+}
