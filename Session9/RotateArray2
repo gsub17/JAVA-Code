@@ -1,0 +1,54 @@
+
+public class RotateArray2 {
+	
+	
+	
+	public static void reverse(int[] arr ,int f ,int l) {
+		
+		int i = f;
+		int k = l -1;
+		
+		while(i < k) {
+			int temp = arr[k];
+			arr[k] = arr[i];
+			arr[i] = temp;
+			
+			i++;
+			k--;
+			
+		}
+		
+	}
+
+	public static void main(String[] args) {  //we are rotating using reverse
+		// TODO Auto-generated method stub
+		
+		int[] arr = {1,2,3,4,5,6,7};
+		int length = arr.length;
+		int f = 0;
+		
+		reverse(arr, f ,length); // reverse the entire arr first
+		for(int i = 0 ; i < length ;i++) {
+			System.out.print(arr[i] + " ");
+		}
+		
+		int rotate = 3;
+		
+		reverse(arr , 0 , rotate );
+		
+		
+		
+		System.out.println();
+		for(int i = 0 ; i < length ;i++) {
+			System.out.print(arr[i] + " ");
+		}
+
+		reverse(arr, rotate , length);
+		
+		System.out.println();
+		for(int i = 0 ; i < length ;i++) {
+			System.out.print(arr[i] + " ");
+		}
+	}
+
+}
